@@ -77,7 +77,7 @@ func (ps ProxyList) NameSetCountry() ProxyList {
 func (ps ProxyList) NameAddIndex() ProxyList {
 	num := len(ps)
 	for i := 0; i < num; i++ {
-		ps[i].SetName(fmt.Sprintf("%s | %+02v", ps[i].BaseInfo().Name, i+1))
+		ps[i].SetName(fmt.Sprintf("%s_%+02v", ps[i].BaseInfo().Name, i+1))
 	}
 	return ps
 }
@@ -86,8 +86,8 @@ func (ps ProxyList) NameReIndex() ProxyList {
 	num := len(ps)
 	for i := 0; i < num; i++ {
 		originName := ps[i].BaseInfo().Name
-		country := strings.SplitN(originName, "|", 2)[0]
-		ps[i].SetName(fmt.Sprintf("%s | %+02v", country, i+1))
+		country := strings.SplitN(originName, "_", 2)[0]
+		ps[i].SetName(fmt.Sprintf("%s_%+02v", country, i+1))
 	}
 	return ps
 }

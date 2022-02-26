@@ -74,7 +74,7 @@ func CrawlGo() {
 
 	// 节点可用性检测，使用batchsize不能降低内存占用，只是为了看性能
 	log.Infoln("Now proceed proxy health check...")
-	b := 500
+	b := 1000
 	round := len(proxies) / b
 	okproxies := make(proxy.ProxyList, 0)
 	for i := 0; i < round; i++ {
