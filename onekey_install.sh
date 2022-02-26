@@ -111,8 +111,8 @@ check_domain(){
     yellow "   安装时请关闭CDN"
     green "========================="
     read your_domain
-    real_addr=`ping ${your_domain} -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
-    local_addr=`curl ipv4.icanhazip.com`
+    real_addr=`getent hosts ${your_domain} | cut -d' ' -f1`
+    local_addr=`curl ip.sb`
     if [ $real_addr == $local_addr ] ; then
         green "============================="
         green "域名解析正常，开始安装爬虫"

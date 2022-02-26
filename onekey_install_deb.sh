@@ -24,7 +24,7 @@ check_domain(){
     yellow " 请输入绑定到本VPS的域名"
     green "================================="
     read your_domain
-    real_addr=`ping ${your_domain} -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
+    real_addr=`getent hosts ${your_domain} | cut -d' ' -f1`
     local_addr=`curl ip.sb`
     if [ $real_addr == $local_addr ] ; then
         green "================================="
