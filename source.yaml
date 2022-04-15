@@ -49,10 +49,6 @@
   options:
     url: https://dllx.tk/GreenFishYYDS-Clash
 
-# 某个网站抓取
-- type: clash
-  options:
-    url: 
 
 
 
