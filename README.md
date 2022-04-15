@@ -30,12 +30,12 @@
 以下五选一。
 ### Debian | Ubuntu:
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/daycat/proxypool/master/onekey_install_deb.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/imkcp-blog/proxypool/master/onekey_install_deb.sh)
 ```
 
 ### CentOS 7.* | RHeL 7.* :
 ```sh
-wget https://raw.githubusercontent.com/lanhebe/proxypool/master/onekey_install.sh && chmod +x onekey_install.sh && ./onekey_install.sh
+wget https://raw.githubusercontent.com/imkcp-blog/proxypool/master/onekey_install.sh && chmod +x onekey_install.sh && ./onekey_install.sh
 ```
 
 ### 从源码编译 （不推荐，有些arch上有bug）
@@ -43,7 +43,7 @@ wget https://raw.githubusercontent.com/lanhebe/proxypool/master/onekey_install.s
 需要安装Golang 
 
 ```sh
-$ go get -u -v github.com/daycat/proxypool
+$ go get -u -v github.com/imkcp-blog/proxypool
 ```
 
 运行
