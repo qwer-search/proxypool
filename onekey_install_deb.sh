@@ -268,7 +268,7 @@ download_pc(){
         ;;
     esac
 
-    wget https://raw.githubusercontent.com/daycat/imkcp-blog/master/source.yaml
+    wget https://raw.githubusercontent.com/imkcp-blog/proxypool/master/source.yaml
    
     cat > ./config.yaml <<-EOF
     domain: $your_domain
