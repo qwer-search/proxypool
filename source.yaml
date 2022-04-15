@@ -29,9 +29,26 @@
   options:
     url: https://raw.githubusercontent.com/du5/free/master/file/0909/Clash.yaml
 
+# 某个网站抓取
+- type: clash
+  options:
+    url: https://pool.jinxnet.xyz/clash/proxies
+    
 
+# 某个网站抓取
+- type: clash
+  options:
+    url: https://ednovas.design/clash/proxies
+ 
 
+- type: clash
+  options:
+    url: https://dllx.tk/GreenFishYYDS-Clash
 
+- type: clash
+  options:
+    url: https://openit.ml/Clash.yaml
+ 
 
 
 
