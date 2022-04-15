@@ -271,8 +271,8 @@ download_pc(){
     mv proxypool-linux-amd64 proxypool
     chmod 755 proxypool
 
-    wget https://raw.githubusercontent.com/lanhebe/proxypool/master/config.yaml
-    wget https://raw.githubusercontent.com/lanhebe/proxypool/master/source.yaml
+    wget https://raw.githubusercontent.com/imkcp-blog/proxypool/master/config.yaml
+    wget https://raw.githubusercontent.com/imkcp-blog/proxypool/master/source.yaml
    
     cat > ./config.yaml <<-EOF
     domain: $your_domain
@@ -290,9 +290,9 @@ download_pc(){
     crawl-interval:       # v0.5.x default 60 (minutes)
     crontime:             # v0.4.x default 60 (minutes). Deprecated in the newest version
     # speed test
-    speedtest: false      # default false. Warning: this will consume large network resources.
-    speedtest-interval:   # default 720 (min)
-    connection:           # default 5. The number of speed test connections simultaneously
+    speedtest: true      # default false. Warning: this will consume large network resources.
+    speedtest-interval: 60  # default 720 (min)
+    connection: 20           # default 5. The number of speed test connections simultaneously
     timeout:              # default 10 (seconds).
     ## active proxy speed test
     active-interval:      # default 60 (min)
