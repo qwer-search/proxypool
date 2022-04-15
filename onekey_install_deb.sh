@@ -220,6 +220,7 @@ config_ssl(){
     green " fork: Sansui233：https://github.com/Sansui233"
     green " fork: lanhebe：https://github.com/lanhebe"
     green " fork: daycat: https://github.com/daycat"
+    green " fork: daycat: https://github.com/imkcp-blog"    
     green "===================================================="
 }
 
@@ -267,7 +268,7 @@ download_pc(){
         ;;
     esac
 
-    wget https://raw.githubusercontent.com/daycat/proxypool/master/source.yaml
+    wget https://raw.githubusercontent.com/daycat/imkcp-blog/master/source.yaml
    
     cat > ./config.yaml <<-EOF
     domain: $your_domain
@@ -285,9 +286,9 @@ download_pc(){
     crawl-interval:       # v0.5.x default 60 (minutes)
     crontime:             # v0.4.x default 60 (minutes). Deprecated in the newest version
     # speed test
-    speedtest: false      # default false. Warning: this will consume large network resources.
-    speedtest-interval:   # default 720 (min)
-    connection:           # default 5. The number of speed test connections simultaneously
+    speedtest: true      # default false. Warning: this will consume large network resources.
+    speedtest-interval: 60  # default 720 (min)
+    connection: 20          # default 5. The number of speed test connections simultaneously
     timeout:              # default 10 (seconds).
     ## active proxy speed test
     active-interval:      # default 60 (min)
@@ -342,7 +343,7 @@ start_menu(){
     green " Original RHEL script made by Littleyu"
     green " Modified by dayCat for use with Debian based systems"
     green " This script is first published on:"
-    green "     https://github.com/daycat/proxypool"
+    green "     https://github.com/imkcp-blog/proxypool"
     green "====================================================="
     green "1. 一键安装节点爬虫"
     green "2. 卸载爬虫"
