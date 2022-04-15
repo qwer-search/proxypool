@@ -40,10 +40,12 @@
   options:
     url: https://ednovas.design/clash/proxies
  
-
-- type: clash
+ - type: clash
   options:
-    url: https://dllx.tk/GreenFishYYDS-Clash
+    url: https://openit.ml/Clash.yaml
+ 
+
+
 
 
 
