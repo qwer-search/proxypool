@@ -339,7 +339,7 @@ uninstall_pc(){
 start_menu(){
     clear
     green "====================================================="
-    green " 适用于Debian | Ubuntu，一键安装节点爬虫"
+    green " 适用于Debian | Ubuntu | s390x，一键安装节点爬虫"
     green " Original RHEL script made by Littleyu"
     green " Modified by dayCat for use with Debian based systems"
     green " This script is first published on:"
