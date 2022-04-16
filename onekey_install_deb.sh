@@ -21,7 +21,7 @@ check_domain(){
     green "================================="
     read your_email
     green "================================="
-    yellow " 请输入绑定到本VPS的域名"
+    yellow " 请输入绑定到本VPS的域名不开DNS"
     green "================================="
     read your_domain
     real_addr=`getent hosts ${your_domain} | cut -d' ' -f1`
