@@ -209,11 +209,7 @@ config_ssl(){
     green " 例如： systemctl restart proxypool"
     echo
     echo
-    echo "    那么，如果我做的不错的话，考虑给我买杯咖啡？:D"
-    echo "    谢谢各位的投喂！ 喵！"
-    echo "    BTC: bc1qlj06ehffq33defvh4z84fm3mgle44e799gfg5p"
-    echo "    USDT-TRC20：TBLAmCewbKw62vWLqWh1CthGC3TJbU9yPd"
-    echo "    Blog: https://daycat.space"
+    echo "    Blog: https://blog.imkcp.xyz"
     echo "    此外，非常感谢原作者以及所有fork作者！"
     green " 原作者：https://github.com/zu1k"
     green " fork: yourp112：https://github.com/yourp112"
@@ -232,31 +228,31 @@ download_pc(){
     green "==============="
     sleep 1
     case $(uname -m) in
-      "x86_64" ) wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-amd64
+      "x86_64" ) wget https://github.com/imkcp-blog/proxypool/releases/download/latest/proxypool-linux-amd64
         mv proxypool-linux-amd64 proxypool
         chmod +x proxypool
         ;;
-      "i686" ) wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-386
+      "i686" ) wget https://github.com/imkcp-blog/proxypool/releases/download/latest/proxypool-linux-386
         mv proxypool-linux-386 proxypool
         chmod +x proxypool
         ;;
-      "aarch64" ) wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-arm64
+      "aarch64" ) wget https://github.com/imkcp-blog/proxypool/releases/download/latest/proxypool-linux-arm64
         mv proxypool-linux-arm64 proxypool
         chmod +x proxypool
         ;;
-      "s390x" ) wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-s390x
+      "s390x" ) wget https://github.com/imkcp-blog/proxypool/releases/download/latest/proxypool-linux-s390x
         mv proxypool-linux-s390x proxypool
         chmod +x proxypool
         ;;
-      "armv5l" ) wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-arm-5
+      "armv5l" ) wget https://github.com/imkcp-blog/proxypool/releases/download/latest/proxypool-linux-arm-5
         mv proxypool-linux-arm-5 proxypool
         chmod +x proxypool
         ;;
-      "armv6l" ) wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-arm-6
+      "armv6l" ) wget https://github.com/imkcp-blog/proxypool/releases/download/latest/proxypool-linux-arm-6
         mv proxypool-linux-arm-6 proxypool
         chmod +x proxypool
         ;;
-      "armv7l" ) wget https://github.com/daycat/proxypool/releases/download/latest/proxypool-linux-arm-7
+      "armv7l" ) wget https://github.com/imkcp-blog/proxypool/releases/download/latest/proxypool-linux-arm-7
         mv proxypool-linux-arm-7 proxypool
         chmod +x proxypool
         ;;
@@ -287,8 +283,8 @@ download_pc(){
     crontime:             # v0.4.x default 60 (minutes). Deprecated in the newest version
     # speed test
     speedtest: true      # default false. Warning: this will consume large network resources.
-    speedtest-interval: 60  # default 720 (min)
-    connection: 20          # default 5. The number of speed test connections simultaneously
+    speedtest-interval: 120  # default 720 (min)
+    connection: 15          # default 5. The number of speed test connections simultaneously
     timeout:              # default 10 (seconds).
     ## active proxy speed test
     active-interval:      # default 60 (min)
