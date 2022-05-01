@@ -30,7 +30,7 @@
 以下五选一。
 ### Debian | Ubuntu:
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/imkcp-blog/proxypool/master/onekey_install_deb.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/qwer-search/proxypool/master/onekey_install_deb.sh)
 ```
 
 ### CentOS 7.* | RHeL 7.* :
