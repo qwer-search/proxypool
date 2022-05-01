@@ -7,7 +7,19 @@
 - type: subscribe
   options:
     url: https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray
-
+    
+- type: subscribe
+  options:
+    url: https://dingyue-3843.onrender.com/yunbaitechnodes
+    
+- type: subscribe
+  options:
+    url: https://raw.fastgit.org/chfchf0306/jeidian4.18/main/4.18
+    
+- type: subscribe
+  options:
+    url: https://anzhuohezi-welcome-you.netlify.app/
+    
 # 网页模糊抓取
 - type: webfuzz
   options:
@@ -17,6 +29,11 @@
 - type: tgchannel
   options:
     channel: ssrList
+    num: 200
+    
+- type: tgchannel
+  options:
+    channel: WangCai_1
     num: 200
 
 # 翻墙党论坛抓取
@@ -29,6 +46,10 @@
   options:
     url: https://raw.githubusercontent.com/du5/free/master/file/0909/Clash.yaml
 
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/chfchf0306/clash/main/clash
+    
 # 某个网站抓取
 - type: web-freessrxyz
   options:
